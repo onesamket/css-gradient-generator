@@ -1,0 +1,28 @@
+<!-- Same as before -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gradient Generator</title>
+  </head>
+  <body>
+    <div class="gradient-container">
+      <input type="color" id="color1" value="#ff0000" />
+      <input type="color" id="color2" value="#00ff00" />
+
+      <select id="gradient-type">
+        <option value="linear">Linear Gradient</option>
+        <option value="radial">Radial Gradient</option>
+      </select>
+
+      <button onclick="generateGradient()">Generate Gradient</button>
+      <div id="gradient-preview"></div>
+
+      <!-- Added textarea for displaying and copying CSS code -->
+      <textarea id="css-code" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
